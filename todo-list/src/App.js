@@ -1,19 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TodoItem from './components/todoItem';
 
 function App() {
-  const todosArray = [
-                  'Go to market',
-                  'Buy food',
-                  'Make dinner'
-                ];
-  const todos = todosArray.map(item => <li>{item}</li>)
+  // const todosArray = [
+  //                 'Go to market',
+  //                 'Buy food',
+  //                 'Make dinner'
+  //               ];
+  // const todos = todosArray.map(item => <li>{item}</li>)
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <ul>{todos}</ul>
+        <TodoItem title="Di da bong"/>
+        <TodoItem title="Hoc code Web"/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
