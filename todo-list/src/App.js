@@ -15,8 +15,10 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-          {this.todoItems.map((item,index) => 
+          {this.todoItems.length > 0 && this.todoItems.map((item,index) => 
             <TodoItem key={index} item={item}/>)}
+
+          {this.todoItems.length === 0 && 'Nothing here'}
       </div>
     );
   }
